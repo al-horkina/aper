@@ -1,0 +1,55 @@
+.location {
+  background: #888888;
+  color: white;
+
+  &__text {
+    font-weight: bold;
+
+    &--small {
+      font-weight: normal;
+      text-decoration: none;
+      color: white;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+
+  &__btn {
+    width: 60%;
+  }
+
+  &__online{
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 28px;
+    padding: 18px;
+    background: #00b2ff;
+    border: 0;
+    margin: 10px 0 15px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-box-shadow: 0 8px 10px rgba(0,0,0,.3);
+    box-shadow: 0 8px 10px rgba(0,0,0,.3);
+    outline: none;
+
+    &:hover, &:active, &:focus{
+      text-decoration: none;
+      cursor: pointer;
+      color: white;
+      box-shadow: none;
+
+    }
+
+    .fa {
+      font-size: 30px;
+      padding-right: 10px;
+    }
+  }
+}

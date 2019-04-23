@@ -1,1 +1,43 @@
 // Fonts here
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Start:/bitrix/templates/systemssec_v2/css/common.css?155328168872128*/
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/assets/font/SegoeUIRegular.eot");
+  src: url("/assets/font//SegoeUIRegular.eot-#iefix") format("embedded-opentype"), url("/assets/font//SegoeUIRegular.woff") format("woff"), url("/assets/font//SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/assets/font//SegoeUIBold.eot");
+  src: url("/assets/font/SegoeUIBold.eot-#iefix") format("embedded-opentype"), url("/assets/font//SegoeUIBold.woff") format("woff"), url("/assets/font//SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/assets/font/SegoeUIItalic.eot");
+  src: url("/assets/font/SegoeUIItalic.eot-#iefix") format("embedded-opentype"), url("/bitrix/templates/systemssec_v2/css/../fonts/SegoeUIItalic.woff") format("woff"), url("/bitrix/templates/systemssec_v2/css/../fonts/SegoeUIItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/assets/font/SegoeUILight.eot");
+  src: url("/assets/font/SegoeUILight.eot-#iefix") format("embedded-opentype"), url("/assets/font/SegoeUILight.woff") format("woff"), url("/assets/font/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/assets/font/SegoeUISemiBold.eot");
+  src: url("/assets/font/SegoeUISemiBold.eot-#iefix") format("embedded-opentype"), url("/assets/font/SegoeUISemiBold.woff") format("woff"), url("/assets/font/SegoeUISemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600
+}

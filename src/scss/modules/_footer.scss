@@ -1,0 +1,16 @@
+.footer{
+  background: none repeat scroll 0 0 #2c364a;
+  box-shadow: 0 70px 50px -20px #213040 inset;
+  clear: both;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+
+  &__img {
+    box-sizing: border-box;
+    padding: 10px 20px 10px 0;
+    max-width: 50px;
+    height: auto;
+  }
+
+}

@@ -5,10 +5,308 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Webpack</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<p>hello</p>
+
+<header class="header">
+    <div class="container">
+
+        <div class="top-bar navbar-brand">
+            <div class="top-bar__logo">
+                <img src="assets/img/Logo_png.png" class="img-responsive" alt=""></div>
+            <div class="top-bar__text">
+                <strong>Aper Code </strong>
+            </div>
+            <div class="top-bar__phone"><a href="tel:+380960300888" class="btn">+38 096 0300888</a></div>
+
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: #ffffff!important">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse col-sm-12" id="navbarTogglerDemo02">
+                <ul class="navbar-nav justify-content-between w-100 mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Наши услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Установка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Обслуживание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    </div>
+</header>
+
+<section class="sc_1 text-center"
+         style="background: linear-gradient(to bottom, #f7f7f7 0%, #fbfbe4 63%, #f6f6f6 100%);">
+    <div class="container">
+        <header class="relative">
+            <h1>Установка видеонаблюдения</h1>
+            <div class="subtitle">под ключ с экономией 37% по ГОСТу за 1 день</div>
+        </header>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 hero__section">
+                <img src="assets/img/cctv1.png" class="img-responsive hero__img" style="margin-top: +70px;"></div>
+            <div class="col-sm-8 col-md-8">
+                <ul class="text-left pull-left list-unstyled">
+                    <li>Инженер к вам приедет за 1 час</li>
+                    <li>Работаем 7 дней в неделю</li>
+                    <li>Техподдержка 24 часа в сутки</li>
+                    <li>Готовые решения «под ключ»</li>
+                </ul>
+                <div class="top-order pull-right">
+                    <div class="wrapper" data-form_name="Заявка на консультацию">
+                        <div class="title text-center"><strong>Оставьте заявку на<br><span>консультацию</span></strong>
+                        </div>
+                        <div id="comp_e8219f8b0fb9836ba5c294d8850cd951">
+                            <form name="ORDER" action="" method="POST" enctype="multipart/form-data">
+                                <div class="input-item">
+                                    <input type="text" class="input--theme" placeholder="Имя" name="form_text_1"
+                                           value="" size="0">
+                                </div>
+                                <div class="input-item">
+                                    <input type="text" class="input--theme phone" placeholder="Телефон"
+                                           required="required" name="form_text_2" value="" size="0">+38 096
+                                    0300888</input>
+                                </div>
+                                <div class="clearfix"></div>
+                                <input type="submit" name="web_form_submit" value="Отправить запрос">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sc_2 text-center p_30">
+    <div class="container">
+
+        <h2 class="h3">Наши услуги</h2>
+        <div class="features text-left">
+
+            <div class="features__item media">
+                <div class="features__item__icon pull-left border-0">
+                    <!--<i class="icon-wallet"></i>-->
+                    <img src="assets/img/icon/door.svg" alt="">
+                </div>
+                <div class="media-body">
+                    <h4 class="mt-3"><strong>Дверь со скрытым замком</strong></h4>
+                    <p class="pl-1">Заказывая установку видеонаблюдения у квалифицированных мастеров, вы исключаете
+                        вероятность любых ошибок, а соответственно
+                        и лишних затрат, оплачивая только качественно выполненную работу</p>
+                </div>
+            </div>
+            <div class="features__item media">
+                <div class="features__item__icon pull-left">
+                    <img src="assets/img/icon/cctv.svg" alt="">
+                </div>
+                <div class="media-body">
+                    <h4>Видеонаблюдение</h4>
+                    <p>
+                        Только качественное оборудование, грамотный монтаж и пусконаладка системы способны
+                        обеспечить высокую степень защиты объекта
+                        и зафиксировать все, что попадет в поле зрения камер
+                    </p>
+                </div>
+            </div>
+            <div class="features__item media">
+                <div class="features__item__icon pull-left">
+                    <img src="assets/img/icon/house.svg" alt="">
+
+                </div>
+                <div class="media-body">
+                    <h4>Умный дом</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="features__item media">
+                <div class="features__item__icon pull-left">
+                    <img src="assets/img/icon/intercom.svg" alt="">
+                </div>
+                <div class="media-body">
+                    <h4>Домофон</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="features__item media">
+                <div class="features__item__icon pull-left">
+                    <img src="assets/img/icon/locked.svg" alt="">
+                </div>
+                <div class="media-body">
+                    <h4>Охранная сигнализация</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+            <div class="features__item media">
+                <div class="features__item__icon pull-left">
+                    <img src="assets/img/icon/identity-card-with-clip.svg" alt="">
+                </div>
+                <div class="media-body">
+                    <h4>Контроль доступа</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="features__item media">
+                <div class="features__item__icon pull-left">
+                    <img src="assets/img/icon/fire-alarm.svg" alt="">
+                </div>
+                <div class="media-body">
+                    <h4>Пожарная сигнализация</h4>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="installation sc_2 p_30">
+    <div class="container installation--bg">
+        <h3 class="h3">Установка</h3>
+        <p>Установка системы видеонаблюдения на объекте является одной из важных составляющих комплексной
+            линии безопасности. Эффективность ее работы в процессе эксплуатации будет зависеть от
+            правильного подбора оборудования и грамотной установки на объекте. Наша компания готова
+            предложить широкий спектр услуг: проектирование, монтаж, гарантийное и послегарантийное
+            обслуживание любого уровня сложности в Одессе и Одесской области.</p>
+        <div class="bq">Профессиональная установка системы видеонаблюдения в Одессе при посредстве
+            компании
+            <nobr>«Aper Code»</nobr>
+            <strong>со 100% гарантией, звоните!</strong> Важный шаг к обеспечению защиты вашей
+            собственности.
+        </div>
+
+    </div>
+</section>
+
+<section id="description" class="sc_2 p_30">
+    <div class="container">
+        <h2 class="h2">Обслуживание</h2>
+        <p>Эксплуатация средств активной и пассивной защиты предполагает их поддержание в надлежащем техническом
+            состоянии, что достигается путем регулярного сервисного обслуживания. Только в том случае, когда
+            оборудование и инженерный комплекс в целом полностью исправны на аппаратном и программном уровне, система
+            способна эффективно выполнять свои функции. Профессиональное техническое обслуживание систем безопасности в
+            Одессе предлагает специализированная компания «Aper Code».</p>
+        <p>У нас вы можете заключить договор на обслуживание таких комплексов:</p>
+        <ul>
+            <li>видеонаблюдение;</li>
+            <li>дверь со скрытым замком;</li>
+            <li>умный дом;</li>
+            <li>домофон;</li>
+            <li>охранная сигнализация;</li>
+            <li>контроль доступа;</li>
+            <li>пожарная сигнализация.</li>
+        </ul>
+        <blockquote>Сдавать систему на техническое обслуживание рекомендуется сразу после ввода в эксплуатацию. Это
+            позволяет специалистам вести мониторинг состояния комплекса от начала его работы, предупреждать и вовремя
+            предотвращать возможные сбои и неисправности.
+        </blockquote>
+        <p>Благодаря своевременному сервисному обслуживанию можно добиться безотказной работы системы в течение
+            длительного времени, что дает возможность обеспечить надежную защиту объекта.</p>
+    </div>
+</section>
+
+<section id="company" class="company sc_2 p_30">
+    <div class="container company--bg">
+        <h2 class="h2">О нас</h2>
+        <div class="d-flex">
+            <div class="company__img p-2">
+                <img src="assets/img/Logo_png.png" class="img-responsive" alt=""></div>
+            <p class="company__text">Aper Code – качественно, быстро! Свою репутацию мы заслуживали более 10 лет. Главная цель нашей компании
+                это
+                качество труда и отношение с клиентом. Нам важно оставить улыбку на вашем лице и крепкое рукопожатие. С
+                нами
+                вы будите в безопасности.</p>
+        </div>
+        <p>
+            Сфера услуг нашей компании связана с безопасностью. Видеонаблюдение и домофоны всех типов с удаленным
+            доступом и бесплатной техподдержкой даст вам возможность следить за объектом с любой точки земного
+            шара. </p>
+        <p>Ваш дверной замок уже не взломают, мы установим скрытый без ключа, так же у нас можно приобрести дверь на
+            любой
+            вкус уже с встроенной системой.</p>
+        <p>Мы будем вас охранять и оберегать, охранная сигнализация не только защитит от взлома, к вам приедет отряд
+            отборных бойцов в течении 4-х минут.</p>
+        <p>Пожарная машина к вам тоже приедет, на
+            время прибытия не повлияем, но установить пожарную сигнализацию со всеми разрешительными документами наш
+            профиль.
+        </p>
+
+    </div>
+</section>
+
+<section id="location" class="location sc_2 p_30">
+    <div class="container">
+        <h2 class="h2">Контакты</h2>
+        <div class="row d-flex">
+            <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2311.060210190212!2d30.73771504224089!3d46.4619860420735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633d679f53f27%3A0xa50b820c7c9b3998!2z0YPQuy4g0KHRgNC10LTQvdC10YTQvtC90YLQsNC90YHQutCw0Y8sIDEyLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1555965871356!5m2!1sru!2sua"
+                        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-6">
+                <div class="location__box">
+                    <p class="location__text">Адрес:
+                        <span class="location__text--small">г. Одесса, ул. Среднефонтанская 12а</span>
+                    </p>
+                    <p class="location__text">Телефон:
+                        <a href="tel:+380983278737" class="location__text--small">+0960300888</a>
+                    </p>
+                    <p class="location__text">Email:
+                        <a href="mailto:odessalight.od@gmail.com" class="location__text--small"></a>
+                    </p>
+                    <div class="location__btn">
+                        <a class="location__online" href="tg://resolve?domain=Dimadv">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                            Онлайн консультация
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__title">
+            <img src="assets/img/Logo_vector-w.png" class="footer__img" alt="">Aper Code
+        </div>
+
+    </div>
+</footer>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="assets/js/jquery-3.2.1.js"></script>
 </body>
 </html>
