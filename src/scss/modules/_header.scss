@@ -1969,11 +1969,7 @@ div.title-search-result td.title-search-price span {
 	font-weight: normal
 }
 
-@media screen and (max-width: 991px) {
-	.sc_1 ul {
-		display: none
-	}
-}
+
 
 @media screen and (max-width: 500px) {
 	.sc_1 {
@@ -1984,7 +1980,14 @@ div.title-search-result td.title-search-price span {
 @media screen and (max-width: 479px) {
 	.sc_1 .top-order img {
 		right: -19px;
-		bottom: -32px
+		bottom: -32px;
+		display: none;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.sc_1 .top-order {
+		display: none;
 	}
 }
 
@@ -2019,7 +2022,7 @@ div.title-search-result td.title-search-price span {
 @media screen and (max-width: 1199px) {
 	.sc_1 .top-order {
 		max-width: 300px;
-		margin-top: 40px
+		//margin-top: 40px
 	}
 
 	.sc_1 .top-order .wrapper {
@@ -2027,13 +2030,27 @@ div.title-search-result td.title-search-price span {
 	}
 
 	.sc_1 ul {
-		margin-top: 80px
+		//margin-top: 80px
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.sc_1 ul {
+		//display: none;
+		margin-top: 30px;
 	}
 }
 
 @media screen and (max-width: 991px) {
 	.sc_1 .top-order {
 		margin-top: 30px
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.sc_1 ul{
+		float: none;
+		margin: 0 auto;
 	}
 }
 
@@ -3296,6 +3313,11 @@ div.title-search-fader {
 	max-width: 360px;
 }
 
+@media (max-width: 921px) {
+	.hero__section {
+		display: none;
+	}
+}
 @media (min-width: 992px) {
 	.domophone-land .hero__img {
 		margin-top: -70px
@@ -4194,7 +4216,7 @@ div.title-search-fader {
 }
 */
 
-@media (max-width: 767px) {
+@media (max-width: 921px) {
 	.sc_1 .hero__img {
 		display: none;
 	}
@@ -4300,117 +4322,7 @@ div.title-search-result {
 /* End */
 
 
-/* Start:/bitrix/templates/systemssec_v2/components/bitrix/search.title/search/style.css?15403059132108*/
-div.title-search-result {
-	border:1px solid #c6c6c6;
-	display:none;
-	overflow:hidden;
-	z-index:205;
-}
 
-table.title-search-result {
-	border-collapse: collapse;
-	border:none;
-	width:10%;
-}
-
-table.title-search-result th {
-	background-color:#F7F7F7;
-	border-right:1px solid #e8e8e8;
-	color:#949494;
-	font-weight:normal;
-	padding-top:2px;
-	padding-bottom:2px;
-	padding-left:14px;
-	padding-right:12px;
-	text-align:right;
-	vertical-align:top;
-	white-space:nowrap;
-	width:1%;
-}
-
-table.title-search-result td {
-	background-color:white;
-	color:black;
-	font-weight:normal;
-	padding-top:2px;
-	padding-bottom:2px;
-	text-align:left;
-	white-space:nowrap;
-}
-
-table.title-search-result td.title-search-item {
-	padding-left:8px;
-	padding-right:15px;
-}
-
-table.title-search-result td.title-search-item a {
-	padding-left:4px;
-	padding-right:15px;
-	text-decoration: none;
-	color:black;
-	vertical-align:top;
-	display:block;
-}
-
-table.title-search-result td.title-search-item img {
-	vertical-align:top;
-}
-
-table.title-search-result td.title-search-item b {
-	color:#cf0000;
-	font-weight:normal;
-}
-
-table.title-search-result tr.title-search-selected td
-,table.title-search-result tr.title-search-selected a
-,table.title-search-result tr.title-search-selected td.title-search-more a
-{
-	background-color:#fff2be;
-}
-
-table.title-search-result td.title-search-more {
-	font-size:11px;
-	font-weight:normal;
-	padding-right:15px;
-	padding-left:24px;
-	padding-top:0px;
-}
-
-table.title-search-result td.title-search-more a
-{
-	padding-left:12px;
-	padding-right:15px;
-	text-decoration:none;
-	color:#999999;
-}
-
-table.title-search-result td.title-search-all {
-	padding-left:24px;
-	padding-right:15px;
-}
-
-table.title-search-result td.title-search-all a
-{
-	padding-left:4px;
-	text-decoration:none;
-	color:#808080;
-}
-
-table.title-search-result td.title-search-separator
-, table.title-search-result th.title-search-separator {
-	padding-top:0px;
-	padding-bottom:0px;
-	font-size:4px;
-}
-
-div.title-search-fader {
-	display:none;
-	background-image: url('/bitrix/templates/systemssec_v2/components/bitrix/search.title/search/images/fader.png');
-	background-position: right top;
-	background-repeat: repeat-y;
-	position:absolute;
-}
 /* End */
 /* /bitrix/templates/systemssec_v2/css/jquery.fancybox.css?15532811204096 */
 /* /bitrix/templates/systemssec_v2/css/slick.css?15403059131776 */
