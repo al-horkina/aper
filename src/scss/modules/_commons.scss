@@ -30,3 +30,186 @@
 button {
   outline: none !important
 }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box
+}
+
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  margin: 0
+}
+
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  margin: 0;
+  font: 600 16px/normal 'Segoe UI', sans-serif;
+  color: #323232;
+  overflow-x: hidden
+}
+
+.relative {
+  position: relative
+}
+
+h1 {
+  font-size: 45px
+}
+
+.h2, .h3 {
+  position: relative;
+  text-transform: uppercase;
+  padding: 20px 0;
+  margin-bottom: 45px
+}
+
+.h2 {
+  font-size: 36px;
+  text-align: center;
+  line-height: 2;
+  padding: 5px 0
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.h2:after, .h3:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 160px;
+  height: 3px;
+  background: #E14F4F;
+  margin-left: -80px;
+  display: block
+}
+
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 30px
+  }
+
+  h2, .h2 {
+    font-size: 25px
+  }
+}
+
+.inline-block {
+  display: inline-block !important
+}
+
+.padding {
+  padding: 30px 0
+}
+
+.input--theme {
+  border-radius: 4px;
+  display: block;
+  padding: 16px 25px;
+  font-size: 12px;
+  color: #000;
+  border: 0px;
+  width: 100%;
+  margin-bottom: 7px
+}
+
+input[type="submit"], .btn-primary {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 28px;
+  padding: 18px;
+  background: $danger-color;
+  border: 0px;
+  margin: 10px 0 15px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+  outline: none
+}
+
+input[type="submit"]:hover, button:hover {
+  box-shadow: none
+}
+
+input[type="submit"]:active, button:active {
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3)
+}
+
+::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
+  color: #000
+}
+
+.fz_30 {
+  font-size: 30px
+}
+
+.fz_17 {
+  font-size: 17px
+}
+
+.fz_14 {
+  font-size: 14px
+}
+
+@media screen and (max-width: 479px) {
+  .fz_30 {
+    font-size: 20px
+  }
+
+  .fz_17 {
+    font-size: 15px
+  }
+}
+
+.fwn {
+  font-weight: normal
+}
+
+.p_60, .padding {
+  padding: 60px 0
+}
+
+.p_30, .padding_small {
+  padding: 30px 0
+}
+
+.clear {
+  clear: both;
+  display: table;
+  width: 100%
+}
+
+.table {
+  display: table;
+  width: 100%
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle
+}
+
+section.page-top > .row > .maxwidth-theme, .greyline > .row > .maxwidth-theme, .logo_and_menu-row > .row > .maxwidth-theme, .container > .row > .maxwidth-theme {
+  padding: 0
+}
+
+.maxwidth-theme {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1008px;
+  position: relative;
+  width: 100%
+}
+
+

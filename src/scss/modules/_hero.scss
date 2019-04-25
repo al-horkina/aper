@@ -1,3 +1,211 @@
+.sc_1 {
+  padding: 40px 0;
+  background: url(/bitrix/templates/systemssec_v2/css/../img/cctv.png) 0 bottom no-repeat;
+}
+
+.sc_1.remont-sistem-bezopastnosti {
+  background: url(/bitrix/templates/systemssec_v2/css/../img/remont-top-image-bg.png) left top no-repeat;
+}
+
+.sc_1.obsluzhivanie-sistem-bezobasnosti {
+  background: url(/bitrix/templates/systemssec_v2/css/../img/obslugivanie-top-image-bg.png) left center no-repeat;
+}
+
+.sc_1 header {
+  z-index: 1
+}
+
+.sc_1_img {
+  margin-top: 63px
+}
+
+.sc_1 .top-order {
+  margin-top: 80px
+}
+
+.sc_1 h1 {
+  color: $danger-color ;
+  text-transform: uppercase;
+  margin: 0 0 15px
+}
+
+.sc_1 .subtitle {
+  font-weight: bold;
+  color: #323232;
+  font-size: 28px
+}
+
+.sc_1 ul {
+  max-width: 270px;
+  padding: 20px;
+  margin-top: 80px;
+  background: #ffffffe6;
+}
+
+.sc_1 li {
+  display: block;
+  margin: 0;
+  padding: 5px 0 0 63px;
+  /*background: url(/assets/img/icon/stopwatch.svg) no-repeat 0 0;*/
+  min-height: 50px;
+  background: url(../img/icon/stopwatch.svg) no-repeat 0 0;
+}
+
+.sc_1 li + li {
+  margin-top: 30px;
+}
+
+.sc_1 li:nth-child(2) {
+  margin-top: 30px;
+  //background-position: 0 -97px
+  background: url(../img/icon/calendar.svg) no-repeat 0 0;
+}
+
+.sc_1 li:nth-child(3) {
+  //background-position: 0 -193px
+  background: url(../img/icon/24-hours.svg) no-repeat 0 0;
+
+}
+
+.sc_1 li:nth-child(4) {
+  //background-position: 0 -249px
+  background: url(../img/icon/key1.svg) no-repeat 0 0;
+}
+
+.top-order {
+  max-width: 363px;
+  border: 4px solid #000000;
+  background: rgba(245, 247, 250, 0.85);
+  padding: 6px;
+  position: relative
+}
+
+.top-order img {
+  position: absolute;
+  right: -32px;
+  bottom: -18px
+}
+
+.top-order .wrapper {
+  background: #000000 ;
+  color: #fff;
+  padding: 10px 43px;
+  box-shadow: 0 14px 49px rgba(20, 70, 31, 0.3)
+}
+
+.top-order .title {
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-bottom: 15px
+}
+
+.top-order .title span {
+  color: $danger-color;
+}
+
+.top-order label {
+  display: inline;
+  font-weight: normal
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .sc_1 {
+    background: linear-gradient(to bottom, #f7f7f7 0%, #fbfbe4 63%, #f6f6f6 100%);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sc_1 .top-order img {
+    right: -19px;
+    bottom: -32px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sc_1 .top-order {
+    display: none;
+  }
+}
+
+.form-polisies a {
+  text-decoration: underline
+}
+
+.form-polisies a:hover {
+  text-decoration: none
+}
+
+.sc_5 form label {
+  display: inline;
+  vertical-align: top;
+  text-align: left;
+  font-size: 11px;
+  position: relative;
+  top: -3px;
+  word-break: break-all
+}
+
+.sc_1 .top-order label input, .sc_5 form label input {
+  position: absolute;
+  left: 0;
+  top: 0px
+}
+
+.sc_1 .top-order a, .sc_5 form a {
+  color: #fff
+}
+
+@media screen and (max-width: 1199px) {
+  .sc_1 .top-order {
+    max-width: 300px;
+    //margin-top: 40px
+  }
+
+  .sc_1 .top-order .wrapper {
+    padding: 10px 20px
+  }
+
+  .sc_1 ul {
+    //margin-top: 80px
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sc_1 ul {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sc_1 .top-order {
+    margin-top: 30px
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sc_1 ul {
+    margin: 30px auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sc_1 ul{
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sc_1 .subtitle {
+    font-size: 20px
+  }
+}
+
+/*Modal window*/
 .btn__modal {
   display: none;
 
@@ -9,4 +217,36 @@
 
 .modal button.close {
   right: 35px;
+}
+/*hero__section*/
+.hero__section {
+  max-width: 360px;
+}
+
+@media (max-width: 991px) {
+  .hero__section {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .domophone-land .hero__img {
+    margin-top: -70px
+  }
+}
+@media (max-width: 921px) {
+  .sc_1 .hero__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sc_1_img {
+    display: none
+  }
+
+  .sc_1 .top-order {
+    display: none;
+    float: none !important;
+    margin: auto
+  }
 }
