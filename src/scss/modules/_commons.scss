@@ -39,17 +39,19 @@ button {
 html {
   height: 100%;
   -webkit-font-smoothing: antialiased;
-  margin: 0
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  margin: 0;
   font: 600 16px/normal 'Segoe UI', sans-serif;
   color: #323232;
-  overflow-x: hidden
+  overflow-x: hidden;
+  background: #000000;
+  position: relative;
 }
 
 .relative {
@@ -87,7 +89,7 @@ h1 {
   left: 50%;
   width: 160px;
   height: 3px;
-  background: #E14F4F;
+  background: $danger-color  ;
   margin-left: -80px;
   display: block
 }
@@ -212,4 +214,26 @@ section.page-top > .row > .maxwidth-theme, .greyline > .row > .maxwidth-theme, .
   width: 100%
 }
 
+.btn-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 30px;
+  opacity: .5;
+
+  @media screen and (max-width: 767px)  {
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover, &:focus, &:active {
+    opacity: .7;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
 

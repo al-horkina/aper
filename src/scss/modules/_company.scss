@@ -1,12 +1,74 @@
 .company {
   background: whitesmoke;
+  background: url("../img/bg_Black.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
 
-  &__img {
-    width: 30%;
+  &__text {
+
+    &--yellow {
+      color: $danger-color;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &--center {
+      width: 50%;
+      text-align: center;
+      color: #000;
+      background: #ffff1e;
+      padding: 5px;
+      margin: 40px auto;
+      text-transform: uppercase;
+      font-weight: 700;
+      -webkit-transform: skewX(-20deg);
+      -ms-transform: skewX(-20deg);
+      transform: skewX(-20deg);
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
   }
 
-  &__text{
-    margin: auto;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+
   }
 
+  &__item {
+    width: 25%;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid $danger-color;
+    padding: 25px 15px;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      width: 30%;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+  }
+
+}
+
+.btn__modal-show {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+
+  &:hover, &:active, &:focus {
+    background: $warning-color ;
+    border: none;
+  }
 }

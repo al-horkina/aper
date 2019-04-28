@@ -1,6 +1,6 @@
-.footer{
-  background: none repeat scroll 0 0 #2c364a;
-  box-shadow: 0 70px 50px -20px #213040 inset;
+.footer {
+  background: #000000;
+  box-shadow: 0 70px 50px -20px #000000 inset;
   clear: both;
   color: #ffffff;
   font-size: 22px;
@@ -13,4 +13,42 @@
     height: auto;
   }
 
+  &__title {
+    @media screen and (max-width: 479px) {
+      font-size: 0;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__soc {
+    font-size: 20px;
+    text-align: center;
+
+    & .fa {
+      border-radius: 50%;
+      margin-right: 3px;
+      color: $danger-color;
+      font-size: 16px;
+      padding: 6px 3px;
+      vertical-align: 0;
+      transition: transform .1s ease-in;
+
+      &:hover {
+        -o-transform: scale(1.2, 0.5);
+        -ms-transform: scale(1.2, 0.5);
+        -moz-transform: scale(1.2, 0.5);
+        -webkit-transform: scale(1.2, 0.5);
+        transform: scale(1.2);
+      }
+
+    }
+  }
+
 }
+
+

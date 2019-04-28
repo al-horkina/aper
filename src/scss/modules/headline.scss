@@ -1,0 +1,57 @@
+.headline {
+  color: white;
+  text-align: center;
+  height: auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url("../img/rohan-1920x1080.jpg");
+
+  @media screen and (max-width: 767px)  {
+    background-image: url("../img/rohan-800x450.jpg");
+  }
+
+  &__container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 767px)  {
+      height: 50vh;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #eab410, 1px 3px 1px #EAB410;
+    font-weight: bold;
+    font-size: 45px;
+
+    @media screen and (max-width: 767px)  {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 574px) {
+      font-size: 26px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-size: 32px;
+
+    @media screen and (max-width: 767px)  {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 574px) {
+      font-size: 22px;
+    }
+
+  }
+
+
+
+}
