@@ -8,9 +8,6 @@
             return false;
         });
 
-        /*$('#company').scroll(function () {
-            $('#exampleModalLong').modal('toggle')
-        });*/
 
         $(window).scroll(function(){
             const offset = $('#company').offset() ;
