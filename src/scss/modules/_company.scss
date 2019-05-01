@@ -16,14 +16,15 @@
       width: 50%;
       text-align: center;
       color: #000;
-      background: #ffff1e;
+      background: $danger-color ;
       padding: 5px;
       margin: 40px auto;
       text-transform: uppercase;
       font-weight: 700;
-      -webkit-transform: skewX(-20deg);
+      border-radius: 40px;
+     /* -webkit-transform: skewX(-20deg);
       -ms-transform: skewX(-20deg);
-      transform: skewX(-20deg);
+      transform: skewX(-20deg);*/
 
       @media screen and (max-width: 767px) {
         width: 100%;
@@ -44,7 +45,7 @@
   }
 
   &__item {
-    width: 25%;
+    width: 45%;
     background: rgba(0, 0, 0, 0.3);
     border-top: 1px solid $danger-color;
     padding: 25px 15px;
@@ -62,6 +63,22 @@
 
 }
 
+/*Modal window*/
+.btn__modal {
+  display: none;
+  max-width: 300px;
+  margin: 50px auto 0;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 50px;
+  }
+}
+
+.modal button.close {
+  right: 35px;
+}
+
 .btn__modal-show {
   display: block;
   max-width: 300px;
@@ -71,4 +88,8 @@
     background: $warning-color ;
     border: none;
   }
+}
+
+.modal-title {
+  color: black;
 }

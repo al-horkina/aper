@@ -66,6 +66,7 @@
   margin-top: 20px;
 
   @media (max-width: 768px) {
+    text-align: left;
     font-size: 16px;
   }
 }
@@ -84,15 +85,17 @@
   width: 100%;
   text-align: center;
   color: black;
-  background: #ffff1e;
+  background: $danger-color ;
   padding: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  transform: skewX(-20deg);
+  border-radius: 40px;
+  font-size: 18px;
+  /*transform: skewX(-20deg);
 
   & span {
     transform: skewX(20deg);
-  }
+  }*/
 }
 
 .features__item__icon {

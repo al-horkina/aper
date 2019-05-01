@@ -1,6 +1,7 @@
 .sc_1 {
   padding: 40px 0;
- background: -webkit-linear-gradient(45deg,#fffcfc,#fcfcfc 36%,#000000);
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(45deg, #fffcfc, #fcfcfc 36%, #000000);
 }
 
 .sc_1.remont-sistem-bezopastnosti {
@@ -46,9 +47,10 @@
   display: block;
   margin: 0;
   padding: 5px 0 0 63px;
-  /*background: url(/assets/img/icon/stopwatch.svg) no-repeat 0 0;*/
   min-height: 50px;
-  background: url(../img/icon/stopwatch.svg) no-repeat 0 0;
+  background-image: url(../img/icon/stopwatch.svg);
+  background-repeat: no-repeat;
+  background-position: left, top;
 }
 
 .sc_1 li + li {
@@ -203,22 +205,6 @@
   }
 }
 
-/*Modal window*/
-.btn__modal {
-  display: none;
-  max-width: 300px;
-  margin: 50px auto 0;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-    margin-top: 50px;
-  }
-}
-
-.modal button.close {
-  right: 35px;
-}
-
 /*hero__section*/
 .hero__section {
   max-width: 360px;
@@ -252,4 +238,15 @@
     float: none !important;
     margin: auto
   }
+}
+
+.hero__form {
+  display: none;
+  margin: 30px auto;
+  max-width: 270px;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
 }

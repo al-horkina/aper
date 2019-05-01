@@ -11,7 +11,7 @@
 <link href="assets/css/app.css" rel="stylesheet"></head>
 <body>
 
-<header class="header">
+<header class="header" id="top">
     <div class="container">
 
         <div class="top-bar navbar-brand">
@@ -70,7 +70,7 @@
 <main class="headline relative">
     <div class="container-fluid headline__container">
         <h1 class="headline__title">Установка систем безопасности</h1>
-        <h3 class="headline__subtitle">Первые в Украине двери со скрытым замком!</h3>
+        <!--<h3 class="headline__subtitle">Первые в Украине двери со скрытым замком!</h3>-->
     </div>
 </main>
 
@@ -86,7 +86,7 @@
                 </div>
                 <div class="media-body">
                     <h4>Скрытый замок</h4>
-                    <h5><span>Лучшее предложение!</span></h5>
+                    <h5><span>Первые в Украине двери со скрытым замком!</span></h5>
                     <p class="pl-1">Без замочной скважины и невидим снаружи двери. Эффективная защита от
                         отмычек и взлома</p>
                 </div>
@@ -184,12 +184,12 @@
                 </div>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn__modal btn-primary" data-toggle="modal"
+                <!--<button type="button" class="btn btn__modal btn-primary" data-toggle="modal"
                         data-target="#exampleModalLong">КОНСУЛЬТАЦИЯ
-                </button>
+                </button>-->
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                <!--<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
                      aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -202,11 +202,11 @@
                             <div class="modal-body">
                                 <form name="ORDER" action="" method="POST" enctype="multipart/form-data">
                                     <div class="input-item">
-                                        <input type="text" class="input--theme" placeholder="Имя" name="form_text_1"
+                                        <input type="text" class="input&#45;&#45;theme" placeholder="Имя" name="form_text_1"
                                                value="" size="0">
                                     </div>
                                     <div class="input-item">
-                                        <input type="text" class="input--theme phone" placeholder="Телефон"
+                                        <input type="text" class="input&#45;&#45;theme phone" placeholder="Телефон"
                                                required="required" name="form_text_2" value="" size="0"/>
                                     </div>
                                     <div class="clearfix"></div>
@@ -215,7 +215,20 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
+
+                <form name="ORDER" action="" method="POST" enctype="multipart/form-data" class="hero__form">
+                    <div class="input-item">
+                        <input type="text" class="input&#45;&#45;theme" placeholder="Имя" name="form_text_1"
+                               value="" size="0">
+                    </div>
+                    <div class="input-item">
+                        <input type="text" class="input&#45;&#45;theme phone" placeholder="Телефон"
+                               required="required" name="form_text_2" value="" size="0"/>
+                    </div>
+                    <div class="clearfix"></div>
+                    <input type="submit" name="web_form_submit" value="Консультация">
+                </form>
 
 
             </div>
@@ -234,22 +247,19 @@
         <p>Сфера услуг нашей компании связана с безопасностью. Видеонаблюдение и домофоны всех типов с удаленным
             доступом и бесплатной техподдержкой даст вам возможность следить за объектом с любой точки земного
             шара. </p>
-        <p class="company__text company__text--center">С нами вы будите в безопасности</p>
+        <!--<p class="company__text company__text&#45;&#45;center">С нами вы будите в безопасности</p>-->
         <div class="company__box">
             <p class="company__item">Ваш дверной замок уже не взломают, мы установим скрытый без ключа, так же у нас можно приобрести дверь на
                 любой вкус уже с встроенной системой.</p>
             <p class="company__item">Мы будем вас охранять и оберегать, охранная сигнализация не только защитит от взлома, к вам приедет отряд
                 отборных бойцов в течении 4-х минут.</p>
-            <p class="company__item">Пожарная машина к вам тоже приедет, на
-                время прибытия не повлияем, но установить пожарную сигнализацию со всеми разрешительными документами наш
-                профиль.</p>
         </div>
 
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn__modal-show btn-primary" data-toggle="modal"
+        <!--<button type="button" class="btn btn__modal-show btn-primary" data-toggle="modal"
                 data-target="#exampleModalLong">КОНСУЛЬТАЦИЯ
-        </button>
+        </button>-->
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
@@ -335,7 +345,7 @@
 </footer>
 
 <div class="btn-top">
-    <a href="#"><img class="btn-top__img" src="assets/img/top.png" alt="Вверх"></a>
+    <a href="#top"><img class="btn-top__img" src="assets/img/top.png" alt="Вверх"></a>
 
 </div>
 
@@ -349,6 +359,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<script src="assets/js/jquery-3.2.1.js"></script>
+
 <script type="text/javascript" src="assets/js/app.js"></script></body>
 </html>
