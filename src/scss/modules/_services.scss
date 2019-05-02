@@ -92,11 +92,11 @@
   font-weight: bold;
   border-radius: 40px;
   font-size: 18px;
-  /*transform: skewX(-20deg);
 
-  & span {
-    transform: skewX(20deg);
-  }*/
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
 }
 
 .features__item__icon {
