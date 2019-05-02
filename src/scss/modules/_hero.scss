@@ -102,12 +102,6 @@
   font-weight: normal
 }
 
-/*@media screen and (max-width: 500px) {
-  .sc_1 {
-    background: linear-gradient(to bottom, #f7f7f7 0%, #fbfbe4 63%, #f6f6f6 100%);
-  }
-}*/
-
 @media screen and (max-width: 479px) {
   .sc_1 .top-order img {
     right: -19px;
@@ -153,16 +147,12 @@
 @media screen and (max-width: 1199px) {
   .sc_1 .top-order {
     max-width: 300px;
-    //margin-top: 40px
   }
 
   .sc_1 .top-order .wrapper {
     padding: 10px 20px
   }
 
-  .sc_1 ul {
-    //margin-top: 80px
-  }
 }
 
 @media screen and (max-width: 991px) {

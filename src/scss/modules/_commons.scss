@@ -6,7 +6,6 @@
   display: none
 }
 
-
 @media screen and (min-width: 575px) {
   .d-sm-block {
     display: block !important
@@ -89,7 +88,7 @@ h1 {
   left: 50%;
   width: 160px;
   height: 3px;
-  background: $danger-color  ;
+  background: $danger-color;
   margin-left: -80px;
   display: block
 }
@@ -132,11 +131,11 @@ input[type="submit"], .btn-primary {
   border-radius: 28px;
   padding: 18px;
   background: $danger-color;
-  border: 0px;
+  border: 0;
   margin: 10px 0 15px;
   width: 100%;
   cursor: pointer;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
   outline: none
 }
 
@@ -145,7 +144,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 input[type="submit"]:active, button:active {
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3)
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3)
 }
 
 ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
@@ -222,7 +221,7 @@ section.page-top > .row > .maxwidth-theme, .greyline > .row > .maxwidth-theme, .
   right: 30px;
   opacity: .5;
 
-  @media screen and (max-width: 767px)  {
+  @media screen and (max-width: 767px) {
     width: 30px;
     height: 30px;
   }
