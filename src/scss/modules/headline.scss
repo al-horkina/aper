@@ -4,7 +4,7 @@
   height: auto;
   overflow: hidden;
 
-  &:before {
+  /*&:before {
     content: '';
     background-image: url("../img/rohan-1920x1080-min.jpg");
     background-position: 50% 50%;
@@ -20,10 +20,10 @@
     @media  (max-width: 767px)  {
       background-image: url("../img/rohan-800x450-min.jpg");
     }
-  }
+  }*/
 
 
-  /*background-position: 50% 50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -35,13 +35,11 @@
 
   @media only screen
   and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : portrait) { background-image: url("../img/rohan-800x450-min.jpg"); }
+  and (max-device-width : 667px) {  background-attachment: inherit; }
 
   @media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : landscape) { background-image: url("../img/rohan-800x450-min.jpg");}*/
+  and (min-device-width : 414px)
+  and (max-device-width : 736px) { background-attachment: inherit;}
 
 
 
