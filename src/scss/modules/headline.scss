@@ -9,7 +9,7 @@
   overflow: hidden;
   background-image: url("../img/rohan-1920x1080-min.jpg");
 
-  @media screen and (max-width: 767px)  {
+  @media  (max-width: 767px)  {
     background-image: url("../img/rohan-800x450-min.jpg");
   }
 
