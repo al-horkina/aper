@@ -8,12 +8,24 @@
             return false;
         });
 
+        localStorage.clear();
+
+
+
+
 
         $(window).scroll(function(){
             const offset = $('#company').offset() ;
-            if ($(this).scrollTop() > offset.top && $(this).scrollTop() < (offset.top + 20)  ) {
+            let isshow = localStorage.getItem('isshow');
+
+            if ($(this).scrollTop() > offset.top && $(this).scrollTop() < (offset.top + 20)) {
+                if (isshow == null) {
+
                 $('#exampleModalLong').modal('show');
+                localStorage.setItem('isshow', 1);
+                }
             }
+
         });
 
 
