@@ -189,34 +189,36 @@
                         <div class="title text-center"><strong>Оставьте заявку на<br><span>консультацию</span></strong>
                         </div>
                         <div id="comp_e8219f8b0fb9836ba5c294d8850cd951">
-                            <form name="ORDER" action="" method="POST" enctype="multipart/form-data">
+                            <form name="ORDER" action="mail.php" method="POST" enctype="multipart/form-data">
                                 <div class="input-item">
-                                    <input type="text" class="input--theme" placeholder="Имя" name="form_text_1"
+                                    <input type="text" class="input--theme" placeholder="Имя" name="name"
                                            value="" size="0">
                                 </div>
                                 <div class="input-item">
                                     <input type="text" class="input--theme phone" placeholder="Телефон"
-                                           required="required" name="form_text_2" value="" size="0"/>
+                                           required="required" name="phone" value="" size="0"/>
                                 </div>
                                 <div class="clearfix"></div>
-                                <input type="submit" name="web_form_submit" value="Отправить запрос">
+                                <input type="hidden" name="subject" value="консультация">
+                                <input type="submit" value="Отправить запрос">
                             </form>
                         </div>
                     </div>
                 </div>
 
 
-                <form name="ORDER" action="" method="POST" enctype="multipart/form-data" class="hero__form">
+                <form name="ORDER" action="mail.php" method="POST" enctype="multipart/form-data" class="hero__form">
                     <div class="input-item">
-                        <input type="text" class="input&#45;&#45;theme" placeholder="Имя" name="form_text_1"
+                        <input type="text" class="input&#45;&#45;theme" placeholder="Имя" name="name"
                                value="" size="0">
                     </div>
                     <div class="input-item">
                         <input type="text" class="input&#45;&#45;theme phone" placeholder="Телефон"
-                               required="required" name="form_text_2" value="" size="0"/>
+                               required="required" name="phone" value="" size="0"/>
                     </div>
                     <div class="clearfix"></div>
-                    <input type="submit" name="web_form_submit" value="Консультация">
+                    <input type="hidden" name="subject" value="перезвонить">
+                    <input type="submit" value="Консультация">
                 </form>
 
 
@@ -258,17 +260,18 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form name="ORDER" action="" method="POST" enctype="multipart/form-data">
+                        <form name="ORDER" action="mail.php" method="POST" enctype="multipart/form-data">
                             <div class="input-item">
-                                <input type="text" class="input--theme" placeholder="Имя" name="form_text_1"
+                                <input type="text" class="input--theme" placeholder="Имя" name="name"
                                        value="" size="0">
                             </div>
                             <div class="input-item">
                                 <input type="text" class="input--theme phone" placeholder="Телефон"
-                                       required="required" name="form_text_2" value="" size="0"/>
+                                       required="required" name="phone" value="" size="0"/>
                             </div>
                             <div class="clearfix"></div>
-                            <input type="submit" name="web_form_submit" value="Жду звонка">
+                            <input type="hidden" name="subject" value="консультация">
+                            <input type="submit" value="Жду звонка">
                         </form>
                     </div>
                 </div>
@@ -345,5 +348,53 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="assets/js/app.js"></script></body>
+<script type="text/javascript" src="assets/js/app.js"></script>
+
+<!--<script type="text/javascript">-->
+
+    <!--$("#sendMail").on('click touch', function() {-->
+        <!--$.ajax({-->
+            <!--url: "mail.php",-->
+            <!--data: {-->
+                <!--name:  $("#name").val(),-->
+                <!--phone: $("#phone").val(),-->
+                <!--subject: $("#subject").val(),-->
+            <!--},-->
+            <!--method: 'GET'-->
+        <!--}).done(function() {-->
+            <!--window.location.reload();-->
+        <!--});-->
+    <!--});-->
+
+    <!--$("#sendMail1").on('click touch', function() {-->
+        <!--$.ajax({-->
+            <!--url: "mail.php",-->
+            <!--data: {-->
+                <!--name:  $("#name1").val(),-->
+                <!--phone: $("#phone1").val(),-->
+                <!--subject: $("#subject1").val(),-->
+            <!--},-->
+            <!--method: 'GET'-->
+        <!--}).done(function() {-->
+            <!--window.location.reload();-->
+        <!--});-->
+    <!--});-->
+
+    <!--$("#sendMail2").on('click touch', function() {-->
+        <!--$.ajax({-->
+            <!--url: "mail.php",-->
+            <!--data: {-->
+                <!--name:  $("#name2").val(),-->
+                <!--phone: $("#phone2").val(),-->
+                <!--subject: $("#subject2").val(),-->
+            <!--},-->
+            <!--method: 'GET'-->
+        <!--}).done(function() {-->
+            <!--$('#exampleModalLong').modal('hide');-->
+
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+
+</body>
 </html>
