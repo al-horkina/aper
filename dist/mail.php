@@ -10,8 +10,6 @@ $name  = $_POST['name'];
 $phone = $_POST['phone'];
 $sub   = $_POST['subject'];
 
-$subject = "Заказ с сайта";
-
 $message = 'Телефон: '. $phone .'; Name: ' . $name . '; Форма: ' . $sub;
 
 mail('apercode.system@gmail.com', 'Заказ с сайта', $message);
